@@ -29,10 +29,9 @@ public class Person1 {
 	 * @param input the string to be modified
 	 * @return the modified string
 	 */
-	private String calc(String input) {
-	  //Person 1 put your implementation here
-	  return null;
-	}
+    private String calc(String input) {
+        return input.substring(2,input.length()) + input.substring(0,1);
+    }
 	
 	/**
 	 * Return a string rep of this object
@@ -45,5 +44,10 @@ public class Person1 {
 	public String toString(String input) {
 	  return name + calc(input);
 	}
+
+    public static void main(String ... args) {
+        Person1 p = new Person1("thing");
+        System.out.println(p);
+    }
 
 }
