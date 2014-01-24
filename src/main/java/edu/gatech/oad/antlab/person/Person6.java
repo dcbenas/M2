@@ -31,10 +31,11 @@ public class Person6 {
      */
     private String calc(String input) {
         char[] inputArr = input.toCharArray();
+        String output = "";
         for (char c : inputArr) {
             c++;
+            output += c;
         }
-        String output = new String(inputArr);
         return output;
     }
     
