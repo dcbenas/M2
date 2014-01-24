@@ -1,2 +1,4 @@
 # Ignore all build files
 build/**
+# Ignore gradle config files
+.gradle/**
